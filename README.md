@@ -1,0 +1,1 @@
+App de lista de livros com armazenamento local, feito com Javascript e HTML.
