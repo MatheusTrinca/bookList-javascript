@@ -44,8 +44,11 @@ class UI{
 
         // Remover apos 3 segundos
         setInterval(function(){
-            document.querySelector('.alert').style.display = 'none';
-        }, 3000)
+            const alert = document.querySelector('.alert');
+            if(alert !== null){
+                alert.remove();
+            }
+        }, 4000)
     }
 
     deleteBook(target){
@@ -127,7 +130,7 @@ document.getElementById('book-form').addEventListener('submit',function(e){
 });
 
 // Eventlistener para delete
-document.getElementById('book-list').addEventListener('click', function(e){
+document.getElementById('book-list').addEventListener('mouseup', function(e){
     
     const ui = new UI();
 
@@ -137,5 +140,3 @@ document.getElementById('book-list').addEventListener('click', function(e){
 
     e.preventDefault();
 })
-
-
