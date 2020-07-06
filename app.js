@@ -131,7 +131,6 @@ document.getElementById('book-form').addEventListener('submit',function(e){
 
 // Eventlistener para delete
 document.getElementById('book-list').addEventListener('mouseup', function(e){
-    
     const ui = new UI();
 
     ui.deleteBook(e.target);
